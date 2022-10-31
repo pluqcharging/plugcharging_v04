@@ -1,0 +1,7 @@
+# _redirects must go to the public folder
+# content is processed first on netlyfy, then the netlify.toml is applied
+
+/chargepointId /chargepointid
+
+
+
