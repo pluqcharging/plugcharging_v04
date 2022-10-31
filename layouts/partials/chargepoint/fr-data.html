@@ -1,0 +1,29 @@
+<div class="data">
+  <h2>Votre tarif de PLUQ à ce point de charge est:<sup>*</sup></h2>
+  <table>
+    <tr>
+      <td>Prix [kWh]</td>
+      <td>{{ .Params.kwh }}</td>
+    </tr>
+
+    <tr>
+      <td>Minute:</td>
+      <td>{{ .Params.priceperminute }}par minute</td>
+    </tr>
+
+    <tr>
+      <td>après:</td>
+      <td>{{ .Params.priceperminute }} minutes</td>
+    </tr>
+
+    <tr>
+      <td>frais unique:</td>
+      <td>{{ .Params.fixedfee }} ct</td>
+    </tr>
+  </table>
+  <p class="warning">
+    <sup>*</sup> Veuillez noter ! Certains fournisseurs de cartes de crédit
+    appliquent leurs propres taux. Malheureusement, nous n'avons aucune
+    influence sur ce point.
+  </p>
+</div>

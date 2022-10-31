@@ -1,0 +1,67 @@
+{{ define "main" }}
+  <div style="position:absolute; left: 0pt; top: 0pt; background-color:brown">
+    Layout: /chargepointid/single.html>
+  </div>
+
+  <section class="section narrow cp">
+    <article
+      id="articleContent"
+      class="post-content"
+      style="position: relative"
+    >
+      <p class="languageselector">
+        <a href="#de">DEUTSCH</a> | <a href="#en">ENGLISH</a> |
+        <a href="#fr">FRANÇIS</a>
+      </p>
+
+      <div class="content">
+        <h1>Chargepoint {{ .Params.id }}</h1>
+        {{ .Content }}
+      </div>
+
+      <div id="nl" class="box">
+        <img src="/images/icons_nl.svg" width="50px" />
+        {{ partial "chargepoint/plugline.html" . }}
+        {{ partial "chargepoint/nl-adress.html" . }}
+        {{ partial "chargepoint/nl-data.html" . }}
+        {{ partial "chargepoint/nl-tel.html" . }}
+        {{ partial "chargepoint/nl-tekst.html" . }}
+        {{ partial "chargepoint/nl-download.html" . }}
+        {{ partial "chargepoint/payoff.html" . }}
+      </div>
+
+      <div id="de" class="box">
+        <img src="/images/icons_de.svg" width="50px" />
+        {{ partial "chargepoint/plugline.html" . }}
+        {{ partial "chargepoint/de-adress.html" . }}
+        {{ partial "chargepoint/de-data.html" . }}
+        {{ partial "chargepoint/de-tel.html" . }}
+        {{ partial "chargepoint/de-text.html" . }}
+        {{ partial "chargepoint/de-download.html" . }}
+        {{ partial "chargepoint/payoff.html" . }}
+      </div>
+
+      <div id="en" class="box">
+        <img src="/images/icons_en.svg" width="50px" />
+        {{ partial "chargepoint/plugline.html" . }}
+        {{ partial "chargepoint/en-adress.html" . }}
+        {{ partial "chargepoint/en-data.html" . }}
+        {{ partial "chargepoint/en-tel.html" . }}
+        {{ partial "chargepoint/en-text.html" . }}
+        {{ partial "chargepoint/en-download.html" . }}
+        {{ partial "chargepoint/payoff.html" . }}
+      </div>
+
+      <div id="fr" class="box">
+        <img src="/images/icons_fr.svg" width="50px" />
+        {{ partial "chargepoint/plugline.html" . }}
+        {{ partial "chargepoint/fr-adress.html" . }}
+        {{ partial "chargepoint/fr-data.html" . }}
+        {{ partial "chargepoint/fr-tel.html" . }}
+        {{ partial "chargepoint/fr-tekst.html" . }}
+        {{ partial "chargepoint/fr-download.html" . }}
+        {{ partial "chargepoint/payoff.html" . }}
+      </div>
+    </article>
+  </section>
+{{ end }}

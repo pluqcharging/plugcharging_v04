@@ -1,0 +1,110 @@
+.plugline {
+  font-size: 2rem;
+}
+
+.payoff {
+  color: var(--secondary);
+  font-size: 4rem;
+}
+
+.box {
+  border: 1px dotted black;
+  margin: 0 2rem;
+}
+
+.cp-heading {
+  font-family: pluq;
+}
+
+.cp-table {
+  background-color: var(--thirdcolor);
+}
+.body .cp {
+  font-family: Rotunda, Arial, Helvetica, sans-serif;
+}
+
+/* Rotunda-300 - latin */
+@font-face {
+  font-family: "Rotunda";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/RotundaLight/Rotunda-Light.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/RotundaLight/Rotunda-Light.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/RotundaLight/font.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("fonts/RotundaLight/font.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/Rotunda-Light.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/Rotunda-Light.svg#Rotunda")
+      format("svg"); /* Legacy iOS */
+}
+/* Rotunda-regular - latin */
+@font-face {
+  font-family: "Rotunda";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/RutundaRegular/Rotunda-Regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/RotundaRegular/Rotunda-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/RotundaRegular/font.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/RotundaRegualar/font.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/RotundaRegualar/Rotunda-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/RotundaRegular/Rotunda-Regular.svg#Rotunda") format("svg"); /* Legacy iOS */
+}
+/* Rotunda-Medium500 - latin */
+@font-face {
+  font-family: "Rotunda";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/RotundaMedium/Rotunda-Medium.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/RotundaMedium/Rotunda-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/RotundaMedium/font.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/RotundaMedium/font.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/RotundaMedium/Rotunda-Medium.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/RotundaMedium/Rotunda-Medium.svg#Rotunda") format("svg"); /* Legacy iOS */
+}
+/* Rotunda-700 - Bold */
+@font-face {
+  font-family: "Rotunda";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/RotundaBold/Rotunda-Bold.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/RotundaBold/Rotunda-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/RotundaBold/font.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/RotundaBold/font.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/RotundaBold/Rotunda-Bold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/RotundaBold/Rotunda-Bold.svg#Rotunda") format("svg"); /* Legacy iOS */
+}
+
+/* Rotunda-900 - Extrabold */
+@font-face {
+  font-family: "Rotunda";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/RotundaExtraBold/Rotunda-ExtraBold.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/RotundaExtraBold/Rotunda-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/RotundaExtraBold/font.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/RotundaExtraBold/font.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/RotundaExtraBold/Rotunda-ExtraBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/RotundaExtraBold/Rotunda-ExtraBold.svg#Rotunda") format("svg"); /* Legacy iOS */
+}

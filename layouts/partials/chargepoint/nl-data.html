@@ -1,0 +1,28 @@
+<div class="data">
+  <h2>Het Pluq-tarief op dit laadpunt is: <sup>*</sup></h2>
+  <table>
+    <tr>
+      <td>Prijs [kWh]</td>
+      <td>{{ .Params.kwh }}</td>
+    </tr>
+
+    <tr>
+      <td>Per minuut:</td>
+      <td>{{ .Params.priceperminute }}/Minute</td>
+    </tr>
+
+    <tr>
+      <td>na:</td>
+      <td>{{ .Params.priceperminute }} minuten</td>
+    </tr>
+
+    <tr>
+      <td>Starttarief</td>
+      <td>{{ .Params.fixedfee }} ct eenmalige kosten</td>
+    </tr>
+  </table>
+  <p class="warning">
+    <sup>*</sup> Let op! Sommige laadpasaanbieders hanteren hun eigen tarieven.
+    Helaas hebben wij hier geen invloed op.
+  </p>
+</div>

@@ -1,0 +1,21 @@
+baseURL: "https://charging.cwse.eu"
+languageCode: "en-us"
+title: "Pluq"
+pygmentsstyle: "monokai"
+metaDataFormat: yaml
+
+# Theme settings
+# theme: novela
+module:
+  imports:
+    - path: "github.com/forestryio/hugo-theme-novela"
+paginate: 10
+social:
+  twitter: "#"
+  github: "#"
+  instagram: "#"
+  linkedin: "#"
+  dribbble: "#"
+  youtube: "#"
+taxonomies:
+  author: authors

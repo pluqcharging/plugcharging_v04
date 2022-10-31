@@ -1,0 +1,28 @@
+<div class="data">
+  <h2>Ihr Plug-Tarif an diesem Ladepunkt ist:<sup>*</sup></h2>
+  <table>
+    <tr>
+      <td>Preis pro [kWh]</td>
+      <td>{{ .Params.kwh }}</td>
+    </tr>
+
+    <tr>
+      <td>Minute:</td>
+      <td>{{ .Params.priceperminute }}/Minute</td>
+    </tr>
+
+    <tr>
+      <td>nach:</td>
+      <td>{{ .Params.priceperminute }} Minuten</td>
+    </tr>
+
+    <tr>
+      <td>Einmalige Gebühr:</td>
+      <td>{{ .Params.fixedfee }} ct</td>
+    </tr>
+  </table>
+  <p class="warning">
+    Bitte beachten! Einige Kreditkartenanbieter wenden ihre eigenen Tarife an.
+    Darauf haben wir leider keinen Einfluss.
+  </p>
+</div>

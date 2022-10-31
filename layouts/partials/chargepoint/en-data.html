@@ -1,0 +1,29 @@
+<div class="data">
+  <h2>Your plug rate at this charging point is:<sup>*</sup></h2>
+  <table>
+    <h2>Your PLUQ-</h2>
+    <tr>
+      <td>Price [kWh]</td>
+      <td>{{ .Params.kwh }}</td>
+    </tr>
+
+    <tr>
+      <td>Minute:</td>
+      <td>{{ .Params.priceperminute }}/Minute</td>
+    </tr>
+
+    <tr>
+      <td>after:</td>
+      <td>{{ .Params.priceperminute }} Minutes</td>
+    </tr>
+
+    <tr>
+      <td>one time fee:</td>
+      <td>{{ .Params.fixedfee }} ct</td>
+    </tr>
+  </table>
+  <p class="warning">
+    <sup>*</sup> Please note! Some charge card providers apply their own rates.
+    Unfortunately, we have no influence on this.
+  </p>
+</div>
