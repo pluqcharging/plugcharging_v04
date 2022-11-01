@@ -5,3 +5,4 @@ node_modules
 .prettierignore
 .prettierrc.json
 content_out
+x_layouts/x_partials

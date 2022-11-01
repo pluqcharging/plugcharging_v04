@@ -1,27 +1,29 @@
-{{ define "main" }}
-  <div style="position:absolute; left: 0pt; top: 0pt; background-color:brown">
-    Layout: /chargepointid/single.html>
-  </div>
+{{ define "headerblock" }}
 
-  <section class="section narrow cp">
-    <article
-      id="articleContent"
-      class="post-content"
-      style="position: relative"
-    >
-      <p class="languageselector">
+  <section class="section narrow cp layouts-chargepointid-single-headerblock">
+ {{ partial "header.html" . }}
+
+      <div class="languageselector">
         <a href="#de">DEUTSCH</a> | <a href="#en">ENGLISH</a> |
         <a href="#fr">FRANÇIS</a>
-      </p>
+      </div>
+  </section>
+
+{{ end }}
+
+
+{{ define "main" }}
+  <section class="section narrow cp layouts-chargepointid-single-mainblock">
 
       <div class="content">
-        <h1>Chargepoint {{ .Params.id }}</h1>
         {{ .Content }}
       </div>
 
       <div id="nl" class="box">
-        <img src="/images/icons_nl.svg" width="50px" />
-        {{ partial "chargepoint/plugline.html" . }}
+        <div>
+          <img src="/images/icons_nl.svg" class="language" >
+        </div>
+        <h2 class="plugline upper">{{ partial "chargepoint/plugline.html" . }}</h2>
         {{ partial "chargepoint/nl-adress.html" . }}
         {{ partial "chargepoint/nl-data.html" . }}
         {{ partial "chargepoint/nl-tel.html" . }}
@@ -31,8 +33,8 @@
       </div>
 
       <div id="de" class="box">
-        <img src="/images/icons_de.svg" width="50px" />
-        {{ partial "chargepoint/plugline.html" . }}
+        <img src="/images/icons_de.svg" class="language" />
+        <h2 class="plugline upper">{{ partial "chargepoint/plugline.html" . }}</h2>
         {{ partial "chargepoint/de-adress.html" . }}
         {{ partial "chargepoint/de-data.html" . }}
         {{ partial "chargepoint/de-tel.html" . }}
@@ -42,8 +44,8 @@
       </div>
 
       <div id="en" class="box">
-        <img src="/images/icons_en.svg" width="50px" />
-        {{ partial "chargepoint/plugline.html" . }}
+        <img src="/images/icons_en.svg" class="language" />
+        <h2 class="plugline upper">{{ partial "chargepoint/plugline.html" . }}</h2>
         {{ partial "chargepoint/en-adress.html" . }}
         {{ partial "chargepoint/en-data.html" . }}
         {{ partial "chargepoint/en-tel.html" . }}
@@ -53,8 +55,8 @@
       </div>
 
       <div id="fr" class="box">
-        <img src="/images/icons_fr.svg" width="50px" />
-        {{ partial "chargepoint/plugline.html" . }}
+        <img src="/images/icons_fr.svg" class="language" />
+        <h2 class="plugline upper">{{ partial "chargepoint/plugline.html" . }}</h2>
         {{ partial "chargepoint/fr-adress.html" . }}
         {{ partial "chargepoint/fr-data.html" . }}
         {{ partial "chargepoint/fr-tel.html" . }}
@@ -64,4 +66,8 @@
       </div>
     </article>
   </section>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "chargepoint/cpfooter.html" . }}
 {{ end }}

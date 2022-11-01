@@ -62,7 +62,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   cursor: default;
-  font-size: 0.625rem;
+  font-size: 0.625; //10px
   line-height: 1.4;
 }
 
@@ -70,7 +70,7 @@ body {
   font-family: "-apple-system", "BlinkMacSystemFont", "San Francisco",
     "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Segoe UI",
     "Arial", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.6rem; //16px
   margin: 0;
   font-weight: 400;
   height: 100%;

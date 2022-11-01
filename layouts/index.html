@@ -1,20 +1,14 @@
-{{ define "headerblock" }}
-  {{ partial "header.html" . }}
-{{ end }}
-
 {{ define "main" }}
-  <div class="layouts-list-mainblock"></div>
   {{ partial "articles/hero.html" . }}
 
   {{ partial "articles/articles.html" . }}
+
+  {{ .Content }}
+
   <p>add a valid pluqid to the slug, please like pluq11201</p>
   <p>
     <a href="http://localhost:1313/chargepointid/pluq11203">
       http://pluq.cwse.eu/chargepointid/pluq11203</a
     >
   </p>
-{{ end }}
-
-{{ define "footer" }}
-  {{ partial "footer.html" . }}
 {{ end }}

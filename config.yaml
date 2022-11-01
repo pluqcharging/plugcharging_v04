@@ -1,4 +1,4 @@
-baseURL: "https://charging.cwse.eu"
+baseURL: "https://charging.pluq.eu"
 languageCode: "en-us"
 title: "Pluq"
 pygmentsstyle: "monokai"
@@ -19,3 +19,5 @@ social:
   youtube: "#"
 taxonomies:
   author: authors
+google: "https://play.google.com"
+apple: "https://www.apple.com/app-store/"

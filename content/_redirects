@@ -1,7 +1,6 @@
-# _redirects must go to the public folder
-# content is processed first on netlyfy, then the netlify.toml is applied
+# this adds the redirect configuration for NETLIFY.
+# _redirects must go to the public folder, therefore placed in content.
+# _redirects is processed first, then the netlify.toml is applied if existing.
+# Permanently (301)
 
-/chargepointId /chargepointid
-
-
-
+/chargepointId /chargepointid 301

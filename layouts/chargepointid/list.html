@@ -1,8 +1,18 @@
-<div style="position:absolute; left: 0pt; top: 0pt; background-color:brown">
-  ---- layout: /chargepointid/list.html
+<div
+  style="position:absolute; left: 0pt; top: 0pt; background-color:rgb(42, 54, 165)"
+>
+  layouts-chargepointid-list
 </div>
 
+{{ define "headerblock" }}
+  {{ partial "header.html" . }}
+{{ end }}
+
 {{ define "main" }}
-  <div class="metalayout">layouts/chargepointid/list.html</div>
+  <div class="metalayout cp layouts-chargepointid-list-mainblock"></div>
   {{ partial "chargepoint/chargepoints.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer.html" . }}
 {{ end }}

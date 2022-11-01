@@ -1,10 +1,15 @@
+{{ define "headerblock" }}
+  <sectio class="section" layouts-_default-single-headerblock> </sectio>
+  {{ partial "header.html" . }}
+{{ end }}
+
 {{ define "main" }}
-  <section class="section narrow">
+  <section class="section narrow layouts-_default-single-mainblock">
     {{ partial "page/hero.html" . }}
-
-
     <article id="articleContent" class="post-content">{{ .Content }}</article>
-
-    +++ layouts/_default/single.html +++
   </section>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer.html" . }}
 {{ end }}

@@ -2,19 +2,23 @@
   {{ partial "head/head.html" . }}
 
 
-  <body class="line-numbers">
+  <body class="line-numbers layouts-_default-baseof">
     {{ $script := resources.Get "js/initColors.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
 
     <div class="layout-styled">
-      {{ partial "header.html" . }}
+      <div class="pagewrapper">
+        {{ block "headerblock" . }}
+        {{ end }}
 
-      {{ block "main" . }}
-      {{ end }}
+        {{ block "main" . }}
+        {{ end }}
 
-      {{ partial "footer.html" . }}
+        {{ block "footer" . }}
+        {{ end }}
+
+      </div>
     </div>
-
     {{ $script := resources.Get "js/prism.js" }}
     <script src="{{ $script.RelPermalink }}"></script>
   </body>

@@ -1,20 +1,31 @@
-#logo-desktop{
-    .change-fill{
-        fill: var(--primary);
-    }
+#logo-desktop {
+  .change-fill {
+    fill: var(--primary);
+  }
 }
 
-#logo-mobile{
-    path{
-        fill: var(--primary);
-    }
+#logo-mobile {
+  path {
+    fill: var(--primary);
+  }
 }
 
-@media screen and (max-width: 735px){
-    .Logo__Desktop {
-        display: none;
-    }
-    .Logo__Mobile{
-        display: block;
-    }
+@media screen and (max-width: 735px) {
+  .Logo__Desktop {
+    display: none;
+  }
+  .Logo__Mobile {
+    display: block;
+  }
+}
+
+// cp
+@media screen and (max-width: 735px) {
+  .cp .Logo__Desktop {
+    display: block;
+    width: 60px;
+  }
+  .cp .Logo__Mobile {
+    display: none;
+  }
 }
