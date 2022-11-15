@@ -126,6 +126,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-radius: 2rem;
+  margin-top: 15px;
 }
 
 .nav-container {
@@ -139,12 +140,14 @@
 
 @media screen and (max-height: 800px) {
   .nav-container {
+    margin-top: 0;
   }
 }
 
 /*DESKTOP MEDIUM*/
 @media screen and (max-width: 1280px) {
   .nav-container {
+    margin-top: 15px;
   }
 }
 

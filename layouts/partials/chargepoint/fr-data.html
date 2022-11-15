@@ -4,25 +4,29 @@
     <tr>
       <td>Prix [kWh]</td>
       <td>{{ .Params.kwh }}</td>
+      <td>EUR</td>
     </tr>
 
     <tr>
       <td>Minute:</td>
-      <td>{{ .Params.priceperminute }}par minute</td>
+      <td>{{ .Params.priceperminute }}</td>
+      <td>EUR par minute</td>
     </tr>
 
     <tr>
       <td>après:</td>
-      <td>{{ .Params.priceperminute }} minutes</td>
+      <td>{{ .Params.priceperminute }}</td>
+      <td>minutes</td>
     </tr>
 
     <tr>
       <td>frais unique:</td>
-      <td>{{ .Params.fixedfee }} ct</td>
+      <td>{{ .Params.onetimefee }}</td>
+      <td>EUR</td>
     </tr>
   </table>
   <p class="warning hanging">
-    <sup>*</sup> Veuillez noter ! Certains fournisseurs de cartes de crédit
+    <sup>*</sup> Veuillez noter ! Certains fournisseurs de carte de recharge
     appliquent leurs propres taux. Malheureusement, nous n'avons aucune
     influence sur ce point.
   </p>

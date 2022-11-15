@@ -1,5 +1,5 @@
 ---
-label: chargingpointID
+label: chargepointId
 hide_body: false
 fields:
   - name: title
@@ -27,3 +27,4 @@ fields:
       time_format:
       display_utc: false
 ---
+

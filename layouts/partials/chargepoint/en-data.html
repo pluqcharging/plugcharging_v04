@@ -1,25 +1,28 @@
 <div class="data">
   <h2>Your PLUQ rate at this charging point is:<sup>*</sup></h2>
   <table>
-    <h2>Your PLUQ-</h2>
     <tr>
       <td>Price [kWh]</td>
       <td>{{ .Params.kwh }}</td>
+      <td>EUR</td>
     </tr>
 
     <tr>
       <td>Minute:</td>
-      <td>{{ .Params.priceperminute }}/Minute</td>
+      <td>{{ .Params.priceperminute }}</td>
+      <td>EUR/minute</td>
     </tr>
 
     <tr>
       <td>after:</td>
-      <td>{{ .Params.priceperminute }} Minutes</td>
+      <td>{{ .Params.freechargefor }}</td>
+      <td>Minutes</td>
     </tr>
 
     <tr>
       <td>one time fee:</td>
-      <td>{{ .Params.fixedfee }} ct</td>
+      <td>{{ .Params.onetimefee }}</td>
+      <td>EUR</td>
     </tr>
   </table>
   <p class="warning hanging">

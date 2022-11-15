@@ -4,13 +4,13 @@
     <tr>
       <td>Prijs [kWh]</td>
       <td class="tds">{{ .Params.kwh }}</td>
-      <td></td>
+      <td>EUR</td>
     </tr>
 
     <tr>
       <td>Per minuut:</td>
       <td class="tds">{{ .Params.priceperminute }}</td>
-      <td>/minute</td>
+      <td>EUR/minute</td>
     </tr>
 
     <tr>
@@ -21,8 +21,8 @@
 
     <tr>
       <td>Starttarief</td>
-      <td class="tds">{{ .Params.fixedfee }}</td>
-      <td>ct eenmalige kosten</td>
+      <td class="tds">{{ .Params.onetimefee }}</td>
+      <td>EUR eenmalig</td>
     </tr>
   </table>
   <p class="warnin hanging">
