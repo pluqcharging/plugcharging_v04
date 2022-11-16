@@ -6,8 +6,13 @@ body .cp {
 .cp .nav-container,
 .cp .nav-container-bgimage {
   border-radius: 1em;
-  margin-top: 15px;
+  padding: 0;
+  margin: 0;
 }
+.cp .p-header {
+  padding-top: 15px;
+}
+
 .cp #logo-desktop {
   margin: 10px;
   width: 60px;
@@ -22,7 +27,7 @@ body .pagewrapper {
   margin: 0 auto;
 }
 
-.cp h1,
+.pagewrapper .cp h1,
 .cp h2,
 .cp h3,
 .cp p {
@@ -38,7 +43,6 @@ body .pagewrapper {
 
 .cp .pagewrapper {
   width: 320px;
-  margin: 15px;
 }
 
 .cp p {
@@ -79,8 +83,6 @@ body .pagewrapper {
   flex-flow: row wrap;
   position: relative; // positioning the flag
   background-color: rgb(228, 224, 224);
-  margin: 3em 15px;
-  padding: 15px;
   border-radius: 1em;
   -webkit-box-shadow: 3px 3px 15px 5px #dedede;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -155,19 +157,22 @@ body .pagewrapper {
 }
 
 .cp table {
-  background: transparent;
+  background-color: var(--thirdcolor);
   margin: 1em auto 0 auto;
   margin: 10px 0 10px 0;
+  padding-bottom: 3px;
 }
+
 .cp td {
-  background-color: var(--thirdcolor);
   color: white;
+  background-color: var(--thirdcolor);
   font-size: 12px;
   padding: 5px 10px 0 0;
   border: 0;
   text-indent: 10px;
   font-weight: 500;
 }
+
 .cp .tds {
   width: 20px;
   text-align: right;
@@ -192,7 +197,7 @@ body .pagewrapper {
   top: 0px;
   left: 160px;
   text-transform: uppercase;
-  margin-top: 15px;
+  margin-top: 10spx;
   font-size: 24px;
 }
 
