@@ -6,25 +6,70 @@ fields:
     type: text
     config:
       required: false
-    label: Title
-  - name: note
-    type: text
-    config:
-      required: false
-    label: Note
-  - name: image
-    type: file
-    config:
-      maxSize: 250
-    label: Image
+    label: Page
+#   - name: note
+#    type: text
+#    config:
+#      required: false
+#    label: Note
+#  - name: image
+#    type: file
+#    config:
+#      maxSize: 250
+#    label: Image
   - name: metadate
     type: datetime
     label: Date
-    description: ""
+    description: "meta description chargepoint pluq"
     config:
       required: false
       date_format:
       time_format:
       display_utc: false
+  - name: id
+    type: text
+    config:
+      required: false
+    label: chargepointId
+  - name: slot
+    type: text
+    config:
+      required: false
+    label: Slot
+  - name: kwh
+    type: text
+    config:
+      required: false
+    label: Price per kwH
+    - name: priceperminute
+    type: text
+    config:
+      required: false
+    label: Price per Minute
+    - name: freechargefor
+    type: text
+    config:
+      required: false
+    label: Freecharge for x minutes
+  - name: onetimefee
+    type: text
+    config:
+      required: false
+    label: One Time Fee
+  - name: locationname
+    type: text
+    config:
+      required: false
+    label: Location
+  - name: street
+    type: text
+    config:
+      required: false
+    label: Strete and Nr.
+  - name: zip_city
+    type: text
+    config:
+      required: false
+    label: Zip and City
 ---
 
