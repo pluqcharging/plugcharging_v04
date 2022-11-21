@@ -1,0 +1,52 @@
+---
+label: pluq-id
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: hero
+  label: hero
+- type: text
+  name: excerpt
+  label: excerpt
+- type: number
+  name: timeToRead
+  label: timeToRead
+- type: list
+  name: authors
+  label: authors
+- type: text
+  name: id
+  label: id
+- type: text
+  name: slot
+  label: slot
+- type: text
+  name: kwh
+  label: kwh
+- type: text
+  name: priceperminute
+  label: priceperminute
+- type: text
+  name: freechargefor
+  label: freechargefor
+- type: text
+  name: onetimefee
+  label: onetimefee
+- type: text
+  name: country
+  label: country
+- type: text
+  name: locationname
+  label: locationname
+- type: text
+  name: street
+  label: street
+- type: text
+  name: zip_city
+  label: zip_city
