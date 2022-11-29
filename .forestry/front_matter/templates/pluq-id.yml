@@ -3,33 +3,33 @@ label: pluq-id
 hide_body: false
 display_field: title
 fields:
-  - type: text
-    name: title
-    label: title (*)
-  - type: text
-    name: id
-    label: id (*)
-  - type: text
-    name: kwh
-    label: kwh (EUR)
-  - type: text
-    name: priceperminute
-    label: priceperminute (EUR)
-  - type: text
-    name: freechargefor
-    label: freechargefor (sec)
-  - type: text
-    name: onetimefee
-    label: onetimefee (EUR)
-  - type: text
-    name: locationname
-    label: locationname
-  - type: text
-    name: street
-    label: street
-  - type: text
-    name: zip_city
-    label: zip_city
-  - type: text
-    name: country
-    label: country (de, nl, be)
+- type: text
+  name: title
+  label: title (*)
+- type: text
+  name: id
+  label: id (*)
+- type: text
+  name: kwh
+  label: kwh (EUR)
+- type: text
+  name: priceperminute
+  label: priceperminute (EUR)
+- type: text
+  name: freechargefor
+  label: freechargefor (sec)
+- type: text
+  name: onetimefee
+  label: onetimefee (EUR)
+- type: text
+  name: locationname
+  label: locationname
+- type: text
+  name: street
+  label: street
+- type: text
+  name: zip_city
+  label: zip_city
+- type: text
+  name: country
+  label: country (de, nl, be)
